@@ -1,0 +1,11 @@
+{
+  "debug":          "false",
+  "whichEnv":       "local",
+  "project_number": "8385",
+  "year":           "2014",
+  "imageWidths":    ["308", "352", "404", "464"],
+  "services": {
+    "default": "english",
+    "others": ["hausa", "swahili", "afrique"]
+  }
+}

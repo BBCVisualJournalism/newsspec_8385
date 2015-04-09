@@ -1,0 +1,48 @@
+<%= include('includes/top.tmpl') %>
+
+    <div id="cm-container" class="main U5MR_">
+
+        <div class="dataviz" data-point="U5MR_">
+
+
+            <div class="cm-map-container">
+
+                <div class="cm-map-title"><%= u5mr_title_ie %></div>
+                <div class="cm-map-cta hidden"><%= u5mr_cta %></div>
+                <!-- NMR map title div class="cm-map-title"><%= nnmr_title_ie %></div -->
+                <!-- NMR map CTA div class="cm-map-cta hidden"><%= nmr_cta %></div -->
+
+                <h2 class="cm-year-title">2013</h2>
+
+                <div class="holding-graphic">
+                    <!-- p style="color: white; position: absolute; margin: 1em;">iFS 1.4</p-->
+                    <img class="non-js" src="<%= pathStatic %>/<%= vocab_dir %>/img/308/u5mr_map_<%= vocab_dir %>.gif" alt="<%=  u5mr_2013_map_alt_text%>" />
+                    <!-- img class="non-js" src="<%= pathStatic %>/<%= vocab_dir %>/img/308/nmr_map_<%= vocab_dir %>.gif" alt="<%=  nmr_2013_map_alt_text %>" /-->
+                </div>
+
+                <div class="delayed-image-load non-svg hidden" data-src="<%= pathStatic %>/<%= vocab_dir %>/img/308/u5mr_map_<%= vocab_dir %>.gif" data-width="320" style="width: 100%;"></div>
+                <!-- div class="delayed-image-load non-svg hidden" data-src="<%= pathStatic %>/<%= vocab_dir %>/img/308/nmr_map_<%= vocab_dir %>.gif" data-width="320" style="width: 100%;"></div -->
+                <div class="svg-container"></div>
+
+                <div class="tooltip"></div>
+                <div class="U5MR_map-key-title cm-map-key-title"><%= u5mr_map_key_text_1 %></div>
+                <div class="NMR_map-key-title cm-map-key-title"><%= nmr_map_key_text_1 %></div>
+
+                <div class="cm-controls-vocabs" data-play="<%= play %>" data-pause="<%= pause %>" data-reset="<%= reset %>"></div>
+            </div>
+
+            <div class="cm-comparison-container">
+
+                <h3><%= u5mr_chart_title %></h3>
+                <p><%= u5mr_chart_subheader_1 %></p>
+                <!-- p><%= nmr_chart_subheader_1 %></p -->
+
+                <img class="cm-chart" src="<%= pathStatic %>/<%= vocab_dir %>/img/u5mr_chart_<%= vocab_dir %>.gif" alt="1990, <%= malawi %>: 245, <%= sub_saharan_africa %>: 179. 2013, <%= malawi %>: 68, <%= sub_saharan_africa %>: 92, Source: <%= source %>" />
+                <!-- img class="cm-chart" src="<%= pathStatic %>/<%= vocab_dir %>/img/u5mr_chart_<%= vocab_dir %>.gif" alt="1990, <%= malawi %>: 50, <%= sub_saharan_africa %>: 46. 2013, <%= malawi %>: 23, <%= sub_saharan_africa %>: 31, Source: <%= source %>" / -->
+
+            </div>
+        </div>
+
+    </div>
+
+<%= include('includes/bottom.tmpl') %>
